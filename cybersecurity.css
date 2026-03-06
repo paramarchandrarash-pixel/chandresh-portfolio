@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #05070d;
+  color: #d1ffd7;
+}
+
+.navbar{
+  background: #020408;
+  border-bottom: 1px solid #00ff88;
+  text-align: center;
+  padding: 14px 10px;
+}
+
+.navbar a{
+  color: #00ff88;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.navbar a:hover{
+  color: #ffffff;
+}
+
+.hero{
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #03110a, #071b12, #0b2b1a);
+  border-bottom: 1px solid #00ff88;
+}
+
+.hero h1{
+  margin: 20px 0 10px;
+  font-size: 52px;
+  color: #00ff88;
+  text-shadow: 0 0 10px rgba(0,255,136,0.45);
+}
+
+.hero p{
+  margin: 0;
+  font-size: 20px;
+  color: #d1ffd7;
+}
+
+.home-btn{
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  color: #00ff88;
+  text-decoration: none;
+  border: 1px solid #00ff88;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,255,136,0.15);
+}
+
+.home-btn:hover{
+  background: #00ff88;
+  color: #03110a;
+}
+
+.intro,
+.extra{
+  max-width: 1100px;
+  margin: 30px auto;
+  background: #0a1118;
+  border: 1px solid #00ff88;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 14px rgba(0,255,136,0.08);
+}
+
+.intro h2,
+.extra h2{
+  margin-top: 0;
+  color: #00ff88;
+}
+
+.intro p,
+.extra li{
+  color: #d1ffd7;
+  line-height: 1.7;
+}
+
+.tips-container{
+  max-width: 1100px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.tip-card{
+  background: #0a1118;
+  border: 1px solid #00ff88;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 14px rgba(0,255,136,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tip-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0,255,136,0.18);
+}
+
+.tip-card h3{
+  margin-top: 0;
+  color: #00ff88;
+  font-size: 24px;
+}
+
+.tip-card p{
+  color: #d1ffd7;
+  line-height: 1.7;
+}
+
+.extra ul{
+  padding-left: 22px;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  color: #00ff88;
+  border-top: 1px solid #00ff88;
+  background: #020408;
+}
+
+@media (max-width: 768px){
+  .hero h1{
+    font-size: 38px;
+  }
+
+  .hero p{
+    font-size: 17px;
+  }
+
+  .navbar a{
+    display: inline-block;
+    margin: 8px;
+  }
+}
